@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="src/style.css">
+
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<h2 class="a">This is a smaller Heading</h2>
+<p>This is a paragraph...<br>with break<br>lines</p>
+
+<h3 class="a"> item list </h3>
+<ul class="b">
+    <li>item 1</li>
+    <li style="color: blue">item 2 and style</li>
+    <li><a href="https://www.google.com">with link</a></li>
+</ul>
+
+<h3 class="a">An image with link</h3>
+<a href="https://github.com/gorisanson/pikachu-volleyball">
+    <img class="b" src="https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png">
+</a>
+
+<p class="large">style from "/style.css"</p>
+
+
+
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<p>using jQuery mouseenter , hide, and click funtion</p>
+<script>
+    
+    $(".a").click(function(){
+            $(this).hide();
+        });
+        $(".b").mouseenter(function(){
+            $(this).hide();
+        });
+
+        
+        $("p").click(function(){
+            $(this).hide();
+        });
+    
+    
+    $("h1").mouseenter(function(){
+      alert("Emotional Damage!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+      $(this).hide();
+    });
+  
+
+    </script>
+
+</body>
+</html>
